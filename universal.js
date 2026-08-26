@@ -14,4 +14,10 @@ class SiteHeader extends HTMLElement{
                     
     }
 }
+class SiteFooter extends HTMLElement{
+    connectedCallback(){
+        this.innerHTML = `
+        <p>&copy; 2026 Clockwork. All Rights Reserved`
+    }
+}
 customElements.define("site-header", SiteHeader);
